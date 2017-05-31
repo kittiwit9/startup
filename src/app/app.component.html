@@ -1,4 +1,16 @@
-<md-grid-list cols="4" rowHeight="100px">
+
+<md-toolbar color="primary">
+    <span [routerLink]="'test1'">test1</span>
+    <span class="example-spacer"></span>
+    <md-icon class="example-icon">favorite</md-icon>
+    <md-icon class="example-icon" [routerLink]="'home'">home</md-icon>
+</md-toolbar>
+
+<router-outlet></router-outlet>
+
+
+
+<!--<md-grid-list cols="4" rowHeight="100px">
   <md-grid-tile
       *ngFor="let tile of tiles"
       [colspan]="tile.cols"
@@ -9,4 +21,4 @@
 </md-grid-list>
 
 
-<chart [options]="options"></chart>
+<chart [options]="options"></chart>-->
